@@ -5,5 +5,9 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="OpenPDF.MainWindow"
         Title="OpenPDF">
-    Welcome to Avalonia!
+    <TextBlock
+		HorizontalAlignment="Center"
+		VerticalAlignment="Center"
+		Text="Welcome to OpenPDF!"
+		FontSize="18"/>
 </Window>
