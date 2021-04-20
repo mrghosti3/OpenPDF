@@ -1,7 +1,16 @@
 # OpenPDF
-Open PDF reader with .NET (C#)
 
-## Contents
+### Description
+
+OpenPDF is a FOSS (free open-source) pdf reader made using .NET C#. Project is community based.
+
+### Platforms
+
+- Windows
+- MacOS
+- Linux (Distros will listed later)
+
+### Contents
 - [Features](#features)
 - [Contribute](#contribute)
 - [Tasks](#tasks)
@@ -25,11 +34,12 @@ Open PDF reader with .NET (C#)
 
 ## Tasks
 
+- [ ] Plan main layout and design [#1](https://github.com/mrghosti3/OpenPDF/issues/1)
 - [ ] To add proper tasks for the project
 - [ ] Test the framework on Linux
 - [X] ~~Test framework on MacOS~~
 
-## Authors:
+### Authors:
 
 - [mrghosti3](https://github.com/mrghosti3)
 - To be added more...
