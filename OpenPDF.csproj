@@ -5,6 +5,8 @@
     <Nullable>enable</Nullable>
     <Version>0.0.1</Version>
     <Description>Open source for PDF reader</Description>
+    <AnalysisLevel>5.0</AnalysisLevel>
+    <StartupObject>OpenPDF.Program</StartupObject>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <PlatformTarget>x64</PlatformTarget>
@@ -15,4 +17,8 @@
     <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
     <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
    </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+    <Folder Include="src\Views\" />
+  </ItemGroup>
 </Project>

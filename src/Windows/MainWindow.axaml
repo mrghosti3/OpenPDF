@@ -1,0 +1,69 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+		d:DesignWidth="800"
+		d:DesignHeight="450"
+        x:Class="OpenPDF.Windows.MainWindow"
+        Title="OpenPDF"
+		WindowState="Maximized">
+
+	<StackPanel
+		Orientation="Vertical"
+		HorizontalAlignment="Stretch"
+		VerticalAlignment="Stretch"
+		Background="Green">
+
+		<TabControl
+			Name="TabsList"
+			Background="LightGray"
+			Items="{Binding Tabs}">
+
+			<!--<TabControl.Resources>
+				<Style TargetType="TabItem">
+					<Setter Property="AllowDrop" Value="True"/>
+				</Style>
+			</TabControl.Resources>-->
+
+			<TabControl.ItemTemplate>
+				<DataTemplate>
+					<StackPanel Orientation="Horizontal">
+						<TextBlock Text="{Binding Title}"/>
+						<Button Name="{Binding Id}" Content="Close" Click="CloseTab" />
+					</StackPanel>
+				</DataTemplate>
+			</TabControl.ItemTemplate>
+			<TabControl.ContentTemplate>
+				<DataTemplate>
+					<StackPanel Orientation="Vertical">
+						<TextBlock Text="{Binding Content}" />
+					</StackPanel>
+				</DataTemplate>
+			</TabControl.ContentTemplate>
+
+		</TabControl>
+
+		<StackPanel
+			Orientation="Horizontal"
+			HorizontalAlignment="Center"
+			Margin="10">
+			
+			<TextBlock
+			Name="tabCount"
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+			Text="{Binding TabCount}"
+			Margin="0 0 50 0"/>
+
+			<Button
+				Name="newTabBtn"
+				HorizontalAlignment="Center"
+				VerticalAlignment="Center"
+				Content="New Tab"
+				Command="{Binding CreateTab}"/>
+			
+		</StackPanel>
+		<TextBlock Text="{Binding Msg}"/>
+	</StackPanel>
+</Window>
